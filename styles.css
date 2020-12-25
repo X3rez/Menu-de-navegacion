@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #581111;
+}
+
+.back {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.521);
+
+}
+.conteiner-flex {
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;    
+    color: #fff;
+    
+}
+
+.conteiner-flex__menu {
+    list-style: none;
+    display:flex;
+}
+
+.conteiner-flex__menu li {
+    margin: 20px ;
+    position: relative;
+    
+
+}
+.conteiner-flex__menu li::after,
+.conteiner-flex__menu li::before {
+    content: "";
+    position: absolute;
+    background: #00fdd3;
+    display: block;
+    opacity: 0%;
+    width: 100%;
+    height: 3px;
+    transition: all ease-out .7s;
+    -webkit-transition: all ease-out .7s;
+    -moz-transition: all ease-out .7s;
+    -ms-transition: all ease-out .7s;
+    -o-transition: all ease-out .7s;
+}
+
+.conteiner-flex__menu li::before {
+    top: 125%;
+}
+
+.conteiner-flex__menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.conteiner-flex__icons i{
+    margin: 5px;
+}
+
+.conteiner-flex__menu li:hover::before{
+    width: 40%;
+    opacity: 100%;
+}
+
+
+.conteiner-flex__menu li:hover::after {
+    width: 80%;
+    opacity: 100%;
+}
